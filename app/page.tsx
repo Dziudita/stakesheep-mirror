@@ -28,4 +28,53 @@ export default function Home() {
 
       <h2
         style={{
-          fontSize: '
+          fontSize: '2rem',
+          color: '#FFD700',
+          marginBottom: '1rem',
+          textShadow: '0 0 10px rgba(255, 215, 0, 0.6)',
+        }}
+      >
+        Stake. Climb. Dominate.
+      </h2>
+
+      <h1
+        style={{
+          fontSize: '2rem',
+          marginBottom: '1rem',
+          color: '#fff',
+        }}
+      >
+        StakeSheep Mirror is coming soon...
+      </h1>
+
+      <a
+        href="https://www.goated.com/r/STAKESHEEP"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          marginTop: '2rem',
+          padding: '12px 24px',
+          backgroundColor: '#000',
+          color: '#FFD700',
+          border: 'none',
+          borderRadius: '8px',
+          fontWeight: 'bold',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          boxShadow: '0 0 15px rgba(255, 215, 0, 0.4)',
+          transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.transform = 'scale(1.05)';
+          e.currentTarget.style.boxShadow = '0 0 20px rgba(255, 215, 0, 0.6)';
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.transform = 'scale(1)';
+          e.currentTarget.style.boxShadow = '0 0 15px rgba(255, 215, 0, 0.4)';
+        }}
+      >
+        Join Now
+      </a>
+    </main>
+  );
+}
