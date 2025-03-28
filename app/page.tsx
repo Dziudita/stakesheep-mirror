@@ -13,11 +13,18 @@ export default function Home() {
         fontFamily: 'Arial, sans-serif',
       }}
     >
-      <img
-        src="/logo.png"
-        alt="StakeSheep Logo"
-        style={{ width: '150px', height: 'auto', marginBottom: '2rem' }}
-      />
+     <img
+  src="/logo.png"
+  alt="StakeSheep Logo"
+  style={{
+    width: '120px',
+    height: 'auto',
+    marginBottom: '2rem',
+    marginTop: '1rem',
+    borderRadius: '12px',
+    boxShadow: '0 0 20px rgba(212, 175, 55, 0.5)',
+  }}
+/>
 
       <h2
         style={{
