@@ -21,9 +21,11 @@ export default function Home() {
     height: 'auto',
     marginBottom: '2rem',
     borderRadius: '0.8rem',
-    background: '0 0 rgba(255, 215, 0, 0.4)',
+    background: 'rgba(255, 215, 0, 0.05)', // optional
+    padding: '10px', // optional
   }}
 />
+
 
       <h2
         style={{
