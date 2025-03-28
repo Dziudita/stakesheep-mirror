@@ -21,10 +21,10 @@ export default function Home() {
     height: 'auto',
     marginBottom: '2rem',
     borderRadius: '0.8rem',
-    background: 'rgba(255, 215, 0, 0.05)', // optional
-    padding: '10px', // optional
+    boxShadow: '0 0 30px rgba(255, 215, 0, 0.4)',
   }}
 />
+
 
 
       <h2
