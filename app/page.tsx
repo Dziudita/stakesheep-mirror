@@ -1,17 +1,17 @@
 'use client';
 export default function Home() {
   return (
-    <main
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        minHeight: '100vh',
-        backgroundColor: '#0c0c0c',
-        color: 'white',
-        fontFamily: 'Arial, sans-serif',
-      }}
+   <main style={{
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  minHeight: '100vh',
+  backgroundColor: '#FFD700', // auksinė
+  color: '#000000',           // juoda
+  fontFamily: 'Arial, sans-serif',
+}}>
+
     >
 <img
   src="/logo.png"
