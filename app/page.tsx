@@ -20,11 +20,10 @@ export default function Home() {
     width: '150px',
     height: 'auto',
     marginBottom: '2rem',
-    borderRadius: '0.5rem',
-    boxShadow: '0 0 30px rgba(255, 215, 0, 0.4)',
+    borderRadius: '0.8rem',
+    background: '0 0 rgba(255, 215, 0, 0.4)',
   }}
 />
-
 
       <h2
         style={{
