@@ -14,6 +14,7 @@ export default function Home() {
       backgroundColor: '#0a0a0a',
       color: '#FFD700',
       fontFamily: 'Arial, sans-serif',
+      padding: '2rem'
     }}>
       <Hero />
       <Stats />
