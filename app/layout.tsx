@@ -1,7 +1,7 @@
 'use client';
 
 import './globals.css';
-import { WagmiConfig, createConfig, configureChains } from 'wagmi';
+import { WagmiConfig, configureChains, createConfig } from 'wagmi';
 import { polygon } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 import { RainbowKitProvider, getDefaultWallets } from '@rainbow-me/rainbowkit';
@@ -14,7 +14,7 @@ const { chains, publicClient } = configureChains(
 
 const { connectors } = getDefaultWallets({
   appName: 'StakeSheep',
-  projectId: 'stakesheep-app',
+  projectId: 'stakesheep-app', // Gali keisti, tai tik pavadinimas
   chains,
 });
 
@@ -27,7 +27,13 @@ const wagmiConfig = createConfig({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
+      <head />
+      <body style={{
+        margin: 0,
+        backgroundColor: '#0a0a0a',
+        color: '#FFD700',
+        fontFamily: 'Arial, sans-serif'
+      }}>
         <WagmiConfig config={wagmiConfig}>
           <RainbowKitProvider chains={chains}>
             {children}
