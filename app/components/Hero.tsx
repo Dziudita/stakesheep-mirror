@@ -1,11 +1,14 @@
 'use client';
 
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+
 export default function Hero() {
   return (
     <div style={{
       textAlign: 'center',
-      paddingTop: '2rem',
-      paddingBottom: '1rem',
+      paddingTop: '3rem',
+      paddingBottom: '3rem',
+      color: '#FFD700',
     }}>
       <img
         src="/logo.png"
@@ -18,41 +21,26 @@ export default function Hero() {
           borderRadius: '20px',
         }}
       />
+
       <h2 style={{
         fontSize: '2.5rem',
-        color: '#FFD700',
-        textShadow: '0 0 12px #FFD700',
+        textShadow: '0 0 15px rgba(255, 215, 0, 0.6)',
         marginBottom: '1rem',
       }}>
         Stake. Climb. Dominate.
       </h2>
+
       <h1 style={{
         fontSize: '2rem',
         color: '#fff',
+        marginBottom: '2rem',
       }}>
         StakeSheep Mirror is coming soon...
       </h1>
-      <a
-        href="https://www.goated.com/r/STAKESHEEP"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{
-          display: 'inline-block',
-          marginTop: '2rem',
-          padding: '12px 24px',
-          backgroundColor: '#000',
-          color: '#FFD700',
-          border: '2px solid #FFD700',
-          borderRadius: '8px',
-          fontWeight: 'bold',
-          textDecoration: 'none',
-          transition: 'all 0.3s ease',
-        }}
-        onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#FFD700')}
-        onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#000')}
-      >
-        Join Now
-      </a>
+
+      <div style={{ marginTop: '2rem' }}>
+        <ConnectButton />
+      </div>
     </div>
   );
 }
