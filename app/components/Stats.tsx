@@ -11,9 +11,6 @@ export default function Stats() {
       maxWidth: '600px',
       textAlign: 'center',
     }}>
-      <p style={{ fontSize: '1.2rem' }}>
-        Realūs Kovo mėnesio duomenys greitai bus čia...
-      </p>
     </div>
   );
 }
